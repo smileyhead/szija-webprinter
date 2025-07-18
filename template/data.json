@@ -1,0 +1,217 @@
+{
+	"header_text":{
+		"name":{
+			"en":"LEVENTE PÁL SZÍJÁRTÓ",
+			"hu":"SZÍJÁRTÓ LEVENTE PÁL",
+		},
+		"bio":{
+			"en":"I translate (🇬🇧/🇭🇺), I code, I modify.<br>See my content on <a href=\"https://github.com/smileyhead\">GitHub</a>. You may contact me on <a href=\"https://crowdin.com/profile/szijartoleventepal\">Crowdin</a>, <a href=\"https://bsky.app/profile/smileyhead.bsky.social\">Bluesky</a>, <a href=\"https://discord.com/channels/@me/164119349836120074/\">Discord</a>, or by <a href=\"szijartoleventepal@gmail.com\">e-mail</a>.",
+			"hu":"Fordítok (🇬🇧/🇭🇺), programozok, modolok.<br>A GitHub-profilom <a href=\"https://github.com/smileyhead\">itt található</a>. Kapcsolat: <a href=\"https://crowdin.com/profile/szijartoleventepal\">Crowdin</a>, <a href=\"https://bsky.app/profile/smileyhead.bsky.social\">Bluesky</a>, <a href=\"https://discord.com/channels/@me/164119349836120074/\">Discord</a>, <a href=\"szijartoleventepal@gmail.com\">e-mail</a>.",
+		},
+		"project_listing":{
+			"en":"Project listing",
+			"hu":"Projektek",
+		},
+		"links":{
+			"en":"Links",
+			"hu":"Hivatkozások",
+		},
+		"other_lang":{
+			"en":"magyar",
+			"hu":"English",
+		},
+	},
+	"project_listing_text":{
+		"top_text":{
+			"en":"These are all the (public) projects I have made over the years, ordered from most to least recent.<br>You may click images to enlarge them.",
+			"hu":"Alább megtalálható az évek során összegyűjtött összes (publikus) projektem.<br>A képek kattintással kinagyíthatóak.",
+		},
+		"filter":{
+			"en":"Filter:",
+			"hu":"Szűrő:",
+		},
+		"no_filter":{
+			"en":"* But nobody came.",
+			"hu":"* De nincs itt senki.",
+		},
+	},
+	"project_types":[
+	{
+		"code_name":"loc",
+		"filter_name":{
+			"en":"Localisations",
+			"hu":"Fordítások",
+		},
+		"inline_name":{
+			"en":"localisation",
+			"hu":"fordítás",
+		},
+	},
+	{
+		"code_name":"cod",
+		"filter_name":{
+			"en":"Coding projects",
+			"hu":"Programozási projektek",
+		},
+		"inline_name":{
+			"en":"coding project",
+			"hu":"programozási projekt",
+		},
+	},
+	{
+		"code_name":"mod",
+		"filter_name":{
+			"en":"Mods",
+			"hu":"Modok",
+		},
+		"inline_name":{
+			"en":"mod",
+			"hu":"mod",
+		},
+	},
+	],
+	"project_entries":[
+	{
+		"name":{
+			"en":"Bluesky",
+			"hu":"Bluesky",
+		},
+		"id":0,
+		"type":"loc",
+		"start_date":"2024-10",
+		"end_date":null,
+		"image":"images/bsky.jpg",
+		"alt_text":{
+			"en":"",
+			"hu":"",
+		},
+		"body_text":{
+			"en":"I was the original contributor (and now lead translator) to write a translation for Bluesky, which I am keeping up to date.",
+			"hu":"Én írtam meg a Bluesky eredeti magyar fordítását, amit jelenleg is naprakészen tartok. Időközben én lettem a vezető fordító is.",
+		},
+		"buttons":[
+		{
+			"label":{
+				"en":"GitHub repo",
+				"hu":"GitHub-adattár",
+			},
+			"emphasis":false,
+			"url":"https://github.com/bluesky-social/social-app"
+		},
+		{
+			"label":{
+				"en":"Website",
+				"hu":"Honlap",
+			},
+			"emphasis":true,
+			"url":"https://bsky.app/"
+		}
+		]
+	},
+	{
+		"name":{
+			"en":"",
+			"hu":"",
+		},
+		"id":0,
+		"type":"",
+		"start_date":"",
+		"end_date":null,
+		"image":"images/.jpg",
+		"alt_text":{
+			"en":"",
+			"hu":"",
+		},
+		"body_text":{
+			"en":"",
+			"hu":"",
+		},
+		"buttons":[
+		{
+			"label":{
+				"en":"",
+				"hu":"",
+			},
+			"emphasis":false,
+			"url":""
+		},
+		{
+			"label":{
+				"en":"Website",
+				"hu":"Honlap",
+			},
+			"emphasis":true,
+			"url":""
+		}
+		]
+	}
+	],
+	"links_text":{
+		"top_text":{
+			"en":"",
+			"hu":"",
+		},
+		"title1":{
+			"en":"",
+			"hu":"",
+		},
+		"text1":{
+			"en":"",
+			"hu":"",
+		},
+		"title2":{
+			"en":"",
+			"hu":"",
+		},
+		"title3":{
+			"en":"",
+			"hu":"",
+		},
+		"text3":{
+			"en":"",
+			"hu":"",
+		},
+		"button_alt_text":{
+			"en":"",
+			"hu":"",
+		},
+	},
+	"links_8831":[
+	{
+		"alt_text":{
+			"en":"",
+			"hu":"",
+		},
+		"url":"",
+	},
+	{
+		"alt_text":{
+			"en":"",
+			"hu":"",
+		},
+		"url":"",
+	},
+	],
+	"links_no_8831":[
+	{
+		"text":{
+			"en":"",
+			"hu":"",
+		},
+		"url":"",
+	},
+	{
+		"text":{
+			"en":"",
+			"hu":"",
+		},
+		"url":"",
+	},
+	],
+	"footer_gag":{
+		"text":{
+			"en":"This is a footer. It is very scary.",
+			"hu":"Az élőlábak egyik fontos tulajdonsága, hogy mindig figyelnek.",
+		},
+	}
+}
