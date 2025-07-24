@@ -1,49 +1,8 @@
-﻿public class AltText
-{
-    public string en { get; set; }
-    public string? hu { get; set; }
-}
-
-public class Bio
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
-
-public class BodyText
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
-
-public class Button
+﻿public class Button
 {
     public Label label { get; set; }
     public bool emphasis { get; set; }
     public string url { get; set; }
-}
-
-public class ButtonAltText
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
-
-public class Filter
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
-
-public class FilterName
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
-
-public class FooterGag
-{
-    public Text text { get; set; }
 }
 
 public class HeaderText
@@ -53,29 +12,6 @@ public class HeaderText
     public ProjectListing project_listing { get; set; }
     public Links links { get; set; }
     public OtherLang other_lang { get; set; }
-}
-
-public class InlineName
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
-
-public class Label
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
-
-public class LastUpdated
-{
-    public Text text { get; set; }
-}
-
-public class Links
-{
-    public string en { get; set; }
-    public string hu { get; set; }
 }
 
 public class Links8831
@@ -103,41 +39,17 @@ public class LinksText
     public Title4 title4 { get; set; }
 }
 
-public class Name
-{
-    public string en { get; set; }
-    public string? hu { get; set; }
-}
-
-public class NoFilter
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
-
-public class OtherLang
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
-
 public class ProjectEntry
 {
     public Name name { get; set; }
     public int id { get; set; }
     public string type { get; set; }
     public string start_date { get; set; }
-    public string? end_date { get; set; }
+    public string end_date { get; set; }
     public string image { get; set; }
     public AltText alt_text { get; set; }
     public BodyText body_text { get; set; }
     public List<Button> buttons { get; set; }
-}
-
-public class ProjectListing
-{
-    public string en { get; set; }
-    public string hu { get; set; }
 }
 
 public class ProjectListingText
@@ -165,53 +77,74 @@ public class Root
     public List<LinksNo8831> links_no_8831 { get; set; }
     public FooterGag footer_gag { get; set; }
     public LastUpdated last_updated { get; set; }
+
+    public string GetInlineName(string codeName, string locale)
+    {
+        for (int i = 0; i < project_types.Count; i++)
+        {
+            if (codeName == project_types[i].code_name) return project_types[i].inline_name.text.Get(locale);
+        }
+        return "ERROR!";
+    }
 }
 
 public class Text
 {
     public string en { get; set; }
-    public string? hu { get; set; }
-}
-
-public class Text1
-{
-    public string en { get; set; }
     public string hu { get; set; }
+
+    public string Get(string locale)
+    {
+        if (locale == "hu" && hu != null) return hu;
+        return en;
+    }
 }
 
-public class Text3
+public class JustText
 {
-    public string en { get; set; }
-    public string hu { get; set; }
+    public Text text { get; set; }
 }
 
-public class Title1
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
+public class Text1 : JustText { }
 
-public class Title2
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
+public class Text3 : JustText { }
 
-public class Title3
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
+public class Title1 : JustText { }
 
-public class Title4
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
+public class Title2 : JustText { }
 
-public class TopText
-{
-    public string en { get; set; }
-    public string hu { get; set; }
-}
+public class Title3 : JustText { }
 
+public class Title4 : JustText { }
+
+public class TopText : JustText { }
+
+public class AltText : JustText { }
+
+public class Bio : JustText { }
+
+public class BodyText : JustText { }
+
+public class ButtonAltText : JustText { }
+
+public class Filter : JustText { }
+
+public class FilterName : JustText { }
+
+public class FooterGag : JustText { }
+
+public class InlineName : JustText { }
+
+public class Label : JustText { }
+
+public class LastUpdated : JustText { }
+
+public class Links : JustText { }
+
+public class Name : JustText { }
+
+public class NoFilter : JustText { }
+
+public class OtherLang : JustText { }
+
+public class ProjectListing : JustText { }
