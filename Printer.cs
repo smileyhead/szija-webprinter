@@ -74,6 +74,8 @@ namespace Szija_Website_Printer
                     if (Strings.project_entries[i].buttons[j].emphasis) main += " button-emph";
 
                     main += $"\">▶ {Strings.project_entries[i].buttons[j].label.text.Get(Locale)}</a>";
+
+                    if (j < Strings.project_entries[i].buttons.Count - 1) main += "&ZeroWidthSpace;";
                 }
 
                 main += "\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t\t";
