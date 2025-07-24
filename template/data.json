@@ -125,8 +125,7 @@
       "type": "cod",
       "start_date": "2025-07",
       "end_date": null,
-      "image": "images/webprinter.jpg",
-      "image_full": "images/webprinter.png",
+      "image": "images/webprinter",
       "alt_text": {
         "text": {
           "en": "",
@@ -163,8 +162,7 @@
       "type": "cod",
       "start_date": "2025-02",
       "end_date": null,
-      "image": "images/acorn.jpg",
-      "image_full": "images/acorn.png",
+      "image": "images/acorn",
       "alt_text": {
         "text": {
           "en": "",
@@ -201,8 +199,7 @@
       "type": "loc",
       "start_date": "2024-10",
       "end_date": null,
-      "image": "images/bsky.jpg",
-      "image_full": "images/bsky.png",
+      "image": "images/bsky",
       "alt_text": {
         "text": {
           "en": "",
@@ -249,8 +246,7 @@
       "type": "mod",
       "start_date": "2024-07",
       "end_date": null,
-      "image": "images/drg-hun-ext.jpg",
-      "image_full": "images/drg-hun-ext.png",
+      "image": "images/drg-hun-ext",
       "alt_text": {
         "text": {
           "en": "",
@@ -297,8 +293,7 @@
       "type": "loc",
       "start_date": "2025-05",
       "end_date": null,
-      "image": "images/wiilink.jpg",
-      "image_full": "images/wiilink.png",
+      "image": "images/wiilink",
       "alt_text": {
         "text": {
           "en": "",
@@ -345,8 +340,7 @@
       "type": "loc",
       "start_date": "2024-02",
       "end_date": null,
-      "image": "images/drgs.jpg",
-      "image_full": "images/drgs.png",
+      "image": "images/drgs",
       "alt_text": {
         "text": {
           "en": "",
@@ -383,8 +377,7 @@
       "type": "oth",
       "start_date": "2024-02",
       "end_date": "",
-      "image": "images/billentyuk.jpg",
-      "image_full": "images/billentyuk.png",
+      "image": "images/billentyuk",
       "alt_text": {
         "text": {
           "en": "",
@@ -431,8 +424,7 @@
       "type": "mod",
       "start_date": "2021-10",
       "end_date": null,
-      "image": "images/drg-sbm.jpg",
-      "image_full": "images/drg-sbm.png",
+      "image": "images/drg-sbm",
       "alt_text": {
         "text": {
           "en": "",
@@ -469,7 +461,7 @@
       "type": "loc",
       "start_date": "2021-08",
       "end_date": null,
-      "image": "images/drg.jpg",
+      "image": "images/drg",
       "image_full": "images/drg.png",
       "alt_text": {
         "text": {
@@ -507,7 +499,7 @@
       "type": "loc",
       "start_date": "2021-09",
       "end_date": null,
-      "image": "images/acnh-tp.jpg",
+      "image": "images/acnh-tp",
       "image_full": "images/acnh-tp.png",
       "alt_text": {
         "text": {
@@ -545,7 +537,7 @@
       "type": "loc",
       "start_date": "2020-03",
       "end_date": null,
-      "image": "images/mktp.jpg",
+      "image": "images/mktp",
       "alt_text": {
         "text": {
           "en": "",
@@ -608,7 +600,7 @@
       "type": "loc",
       "start_date": "2019-11",
       "end_date": "2022-12",
-      "image": "images/lunacy.jpg",
+      "image": "images/lunacy",
       "alt_text": {
         "text": {
           "en": "",
@@ -645,7 +637,7 @@
       "type": "loc",
       "start_date": "2019-05",
       "end_date": "",
-      "image": "images/ec.jpg",
+      "image": "images/ec",
       "alt_text": {
         "text": {
           "en": "",
@@ -702,7 +694,7 @@
       "type": "loc",
       "start_date": "2018-10",
       "end_date": null,
-      "image": "images/cemu.jpg",
+      "image": "images/cemu",
       "alt_text": {
         "text": {
           "en": "",
@@ -739,7 +731,7 @@
       "type": "loc",
       "start_date": "2016-05",
       "end_date": "",
-      "image": "images/nsmbu.jpg",
+      "image": "images/nsmbu",
       "alt_text": {
         "text": {
           "en": "",
@@ -776,7 +768,7 @@
       "type": "loc",
       "start_date": "2016-04",
       "end_date": "",
-      "image": "images/3dshm.jpg",
+      "image": "images/3dshm",
       "alt_text": {
         "text": {
           "en": "",
