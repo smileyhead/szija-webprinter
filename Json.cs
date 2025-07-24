@@ -67,6 +67,12 @@ public class ProjectType
     public InlineName inline_name { get; set; }
 }
 
+public class OpenGraphDescription
+{
+    public ProjectsListingDescription projects_listing_description { get; set; }
+    public LinksDescription links_description { get; set; }
+}
+
 public class RootStrings
 {
     public HeaderText header_text { get; set; }
@@ -78,6 +84,7 @@ public class RootStrings
     public List<LinksNo8831> links_no_8831 { get; set; }
     public FooterGag footer_gag { get; set; }
     public LastUpdated last_updated { get; set; }
+    public OpenGraphDescription open_graph_description { get; set; }
 
     public string GetInlineName(string codeName, string locale)
     {
@@ -105,6 +112,10 @@ public class JustText
 {
     public Text text { get; set; }
 }
+
+public class ProjectsListingDescription : JustText { }
+
+public class LinksDescription : JustText { }
 
 public class Text1 : JustText { }
 

@@ -905,10 +905,18 @@
       "hu": "Legutóbb frissítve: "
     }
   },
-  "latest_change": {
-    "text": {
-      "en": "Latest change: ",
-      "hu": "Legutóbbi változtatás: "
+  "open_graph_description": {
+    "projects_listing_description": {
+      "text": {
+        "en": "A page where I list my projects – mostly game localisations and coding projects.",
+        "hu": "A projektjeimet feltüntető oldal – főleg játékmagyarításokat és programozási projekteket tartalmaz."
+      }
+    },
+    "links_description": {
+      "text": {
+        "en": "A page where I list people and projects I think are cool.",
+        "hu": "Az általam kedvelt személyeket és projekteket feltüntető oldal."
+      }
     }
   }
 }
