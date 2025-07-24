@@ -66,7 +66,7 @@ public class ProjectType
     public InlineName inline_name { get; set; }
 }
 
-public class Root
+public class RootStrings
 {
     public HeaderText header_text { get; set; }
     public ProjectListingText project_listing_text { get; set; }

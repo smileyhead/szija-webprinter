@@ -10,7 +10,7 @@ namespace Szija_Website_Printer
             string inputPath = "template/";
             string outputPath = "output/";
             string jsonString = File.ReadAllText(jsonPath);
-            Root data = JsonSerializer.Deserialize<Root>(jsonString);
+            RootStrings data = JsonSerializer.Deserialize<RootStrings>(jsonString);
 
             for (int i = 0; i < 2; i++)
             {

@@ -8,9 +8,9 @@ namespace Szija_Website_Printer
         private string Locale;
         private string LocaleLong;
         private string OtherLocale;
-        private Root Strings;
+        private RootStrings Strings;
 
-        public Printer(string locale, Root strings)
+        public Printer(string locale, RootStrings strings)
         {
             Locale = locale;
             Strings = strings;
