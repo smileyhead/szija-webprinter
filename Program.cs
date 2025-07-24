@@ -6,22 +6,24 @@ namespace Szija_Website_Printer
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Initialising...");
             string jsonPath = "template/data.json";
             string inputPath = "template/";
             string outputPath = "output/";
             string jsonString = File.ReadAllText(jsonPath);
             RootStrings data = JsonSerializer.Deserialize<RootStrings>(jsonString);
 
-            for (int i = 0; i < 2; i++)
-            {
-                Printer huPrinter = new("hu", data);
-                Printer enPrinter = new("en", data);
 
-                huPrinter.PrintAll(outputPath);
-                enPrinter.PrintAll(outputPath);
-            }
 
-            
+            Printer huPrinter = new("hu", data);
+            Printer enPrinter = new("en", data);
+
+            Console.Write("Compiling pages... 0/4");
+            huPrinter.PrintAll(outputPath);
+            Console.Write("\rCompiling pages... 2/4");
+            enPrinter.PrintAll(outputPath);
+            Console.WriteLine("\rCompiling pages... 4/4");
+            Console.WriteLine("Finished.");
         }
     }
 }

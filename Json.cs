@@ -47,6 +47,7 @@ public class ProjectEntry
     public string start_date { get; set; }
     public string end_date { get; set; }
     public string image { get; set; }
+    public string imageFull { get; set; }
     public AltText alt_text { get; set; }
     public BodyText body_text { get; set; }
     public List<Button> buttons { get; set; }

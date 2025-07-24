@@ -126,6 +126,7 @@
       "start_date": "2025-07",
       "end_date": null,
       "image": "images/webprinter.jpg",
+      "image_full": "images/webprinter.png",
       "alt_text": {
         "text": {
           "en": "",
@@ -163,6 +164,7 @@
       "start_date": "2025-02",
       "end_date": null,
       "image": "images/acorn.jpg",
+      "image_full": "images/acorn.png",
       "alt_text": {
         "text": {
           "en": "",
@@ -200,6 +202,7 @@
       "start_date": "2024-10",
       "end_date": null,
       "image": "images/bsky.jpg",
+      "image_full": "images/bsky.png",
       "alt_text": {
         "text": {
           "en": "",
@@ -247,6 +250,7 @@
       "start_date": "2024-07",
       "end_date": null,
       "image": "images/drg-hun-ext.jpg",
+      "image_full": "images/drg-hun-ext.png",
       "alt_text": {
         "text": {
           "en": "",
@@ -294,6 +298,7 @@
       "start_date": "2025-05",
       "end_date": null,
       "image": "images/wiilink.jpg",
+      "image_full": "images/wiilink.png",
       "alt_text": {
         "text": {
           "en": "",
@@ -341,6 +346,7 @@
       "start_date": "2024-02",
       "end_date": null,
       "image": "images/drgs.jpg",
+      "image_full": "images/drgs.png",
       "alt_text": {
         "text": {
           "en": "",
@@ -378,6 +384,7 @@
       "start_date": "2024-02",
       "end_date": "",
       "image": "images/billentyuk.jpg",
+      "image_full": "images/billentyuk.png",
       "alt_text": {
         "text": {
           "en": "",
@@ -425,6 +432,7 @@
       "start_date": "2021-10",
       "end_date": null,
       "image": "images/drg-sbm.jpg",
+      "image_full": "images/drg-sbm.png",
       "alt_text": {
         "text": {
           "en": "",
@@ -462,6 +470,7 @@
       "start_date": "2021-08",
       "end_date": null,
       "image": "images/drg.jpg",
+      "image_full": "images/drg.png",
       "alt_text": {
         "text": {
           "en": "",
@@ -499,6 +508,7 @@
       "start_date": "2021-09",
       "end_date": null,
       "image": "images/acnh-tp.jpg",
+      "image_full": "images/acnh-tp.png",
       "alt_text": {
         "text": {
           "en": "",

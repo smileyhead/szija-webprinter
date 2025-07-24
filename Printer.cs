@@ -65,7 +65,7 @@ namespace Szija_Website_Printer
                 if (Strings.project_entries[i].end_date == null) main += "–";
                 else if (Strings.project_entries[i].end_date != "") main += $"–<time datetime=\\\"{Strings.project_entries[i].end_date}\\\">{DateFormatter.Format(Strings.project_entries[i].end_date, Locale)}</time>";
 
-                main += $"</aside><span class=\\\"proj-title\\\">{Strings.project_entries[i].name.text.Get(Locale)}</span> <span class=\\\"proj-id\\\">SZLP-{(Strings.project_entries[i].id + 100).ToString("0000")}</span>\\r\\n\\t\\t\\t\\t\\t</div>\\r\\n\\t\\t\\t\\t\\t<div class=\\\"proj-body\\\">\\r\\n\\t\\t\\t\\t\\t\\t<aside><a href=\\\"../{Strings.project_entries[i].image}\\\" target=\\\"_blank\\\"><img class=\\\"proj-img\\\" src=\\\"../{Strings.project_entries[i].image}\\\" alt=\\\"\\\"></a></aside>\\r\\n\\t\\t\\t\\t\\t\\t<p class=\\\"body-text\\\">{Strings.project_entries[i].body_text.text.Get(Locale)}</p>";
+                main += $"</aside><span class=\\\"proj-title\\\">{Strings.project_entries[i].name.text.Get(Locale)}</span> <span class=\\\"proj-id\\\">SZLP-{(Strings.project_entries[i].id + 100).ToString("0000")}</span>\\r\\n\\t\\t\\t\\t\\t</div>\\r\\n\\t\\t\\t\\t\\t<div class=\\\"proj-body\\\">\\r\\n\\t\\t\\t\\t\\t\\t<aside><a href=\\\"../{Strings.project_entries[i].imageFull}\\\" target=\\\"_blank\\\"><img class=\\\"proj-img\\\" src=\\\"../{Strings.project_entries[i].image}\\\" alt=\\\"\\\"></a></aside>\\r\\n\\t\\t\\t\\t\\t\\t<p class=\\\"body-text\\\">{Strings.project_entries[i].body_text.text.Get(Locale)}</p>";
 
                 for (int j = 0; j < Strings.project_entries[i].buttons.Count; j++)
                 {
