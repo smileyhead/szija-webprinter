@@ -1,62 +1,63 @@
 <!doctype html>
 <html lang="hu">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <title>szija</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-    <meta property="og:title" content="szija" />
-    <meta property="og:description" content="A projektjeimet feltüntető oldal – főleg játékmagyarításokat és programozási projekteket tartalmaz." />
-    <meta property="og:locale" content="hu_HU" />
-    <meta property="og:locale:alternate" content="en_GB" />
-    <meta property="og:url" content="szija.hu/index.html" />
-    <style>
-        a {
-            font-weight: bold;
-        }
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>szija</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <meta property="og:title" content="szija" />
+        <meta property="og:description" content="A projektjeimet feltüntető oldal – főleg játékmagyarításokat és programozási projekteket tartalmaz." />
+        <meta property="og:locale" content="hu_HU" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:url" content="szija.hu/index.html" />
+        <style>
+            a {
+                font-weight: bold;
+            }
 
-        #redirect-en {
-            display: none;
-        }
+            #redirect-en {
+                display: none;
+            }
 
-        #redirect-js {
-            display: none;
-        }
+            #redirect-js {
+                display: none;
+            }
 
-        #redirect-nojs {
-            display: block;
-        }
-    </style>
-</head>
+            #redirect-nojs {
+                display: block;
+            }
+        </style>
+    </head>
 
-<body>
-    <div id="wrapper">
-        <div id="redirect-js">
-            <h1 id="redirect-hu">Átirányítás a magyar lapra…</h1>
-            <h1 id="redirect-en" lang="en">Redirecting to the English page…</h1>
+    <body>
+        <div id="wrapper">
+            <div id="redirect-js">
+                <h1 id="redirect-hu">Átirányítás a magyar lapra…</h1>
+                <h1 id="redirect-en" lang="en">Redirecting to the English page…</h1>
+            </div>
+
+            <div id="redirect-nojs">
+                <h1>Kérlek, válassz nyelvet:</h1>
+                <h1 style="font-style: italic; border-width: 0; margin-top: 0; margin-bottom: 12px;" lang="en">Please select your language:</h1>
+                <p style="font-size: 24px"><a href="/hu/index.html">magyar</a> / <a href="/en/index.html" lang="en">English</a></p>
+                <p style="margin-bottom: 0">JavaScript nélkül ez a folyamat nem lehet automatikus. A honlap többi része nem használ JavaScriptet.</p>
+                <p style="font-style: italic" lang="en"><br />This process cannot be done automatically without JavaScript. The rest of the website does not use JavaScript.</p>
+            </div>
         </div>
+        <script>
+            document.getElementById("redirect-nojs").style.display = "none";
+            document.getElementById("redirect-js").style.display = "block";
 
-        <div id="redirect-nojs">
-            <h1>Kérlek, válassz nyelvet:</h1>
-            <h1 style="font-style: italic; border-width: 0; margin-top: 0; margin-bottom: 12px;" lang="en">Please select your language:</h1>
-            <p style="font-size: 24px"><a href="/hu/index.html">magyar</a> / <a href="/en/index.html" lang="en">English</a></p>
-            <p style="margin-bottom: 0">JavaScript nélkül ez a folyamat nem lehet automatikus. A honlap többi része nem használ JavaScriptet.</p>
-            <p style="font-style: italic" lang="en"><br />This process cannot be done automatically without JavaScript. The rest of the website does not use JavaScript.</p>
-        </div>
-    </div>
-    <script>
-        document.getElementById("redirect-nojs").style.display = "none";
-        document.getElementById("redirect-js").style.display = "block";
-
-        const locale = navigator.language; console.log(locale);
-        if (locale == "en") {
-            document.getElementById("redirect-hu").style.display = "none";
-            document.getElementById("redirect-en").style.display = "block";
-            window.location.assign('/en/index.html');
-        }
-        window.location.assign('/hu/index.html');
-    </script>
-</body>
+            const locale = navigator.language; console.log(locale);
+            if (locale != "hu_HU") {
+                document.getElementById("redirect-hu").style.display = "none";
+                document.getElementById("redirect-en").style.display = "block";
+                window.location.assign('/en/index.html');
+                console.log('Entered if block');
+            }
+            window.location.assign('/hu/index.html');
+        </script>
+    </body>
 </html>
