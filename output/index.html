@@ -11,7 +11,7 @@
         <meta property="og:description" content="A projektjeimet feltüntető oldal – főleg játékmagyarításokat és programozási projekteket tartalmaz." />
         <meta property="og:locale" content="hu_HU" />
         <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:url" content="szija.hu/index.html" />
+        <meta property="og:url" content="szija.hu/" />
         <style>
             a {
                 font-weight: bold;
@@ -41,7 +41,7 @@
             <div id="redirect-nojs">
                 <h1>Kérlek, válassz nyelvet:</h1>
                 <h1 style="font-style: italic; border-width: 0; margin-top: 0; margin-bottom: 12px;" lang="en">Please select your language:</h1>
-                <p style="font-size: 24px"><a href="/hu/index.html">magyar</a> / <a href="/en/index.html" lang="en">English</a></p>
+                <p style="font-size: 24px"><a href="/hu/">magyar</a> / <a href="/en/" lang="en">English</a></p>
                 <p style="margin-bottom: 0">JavaScript nélkül ez a folyamat nem lehet automatikus. A honlap többi része nem használ JavaScriptet.</p>
                 <p style="font-style: italic" lang="en"><br />This process cannot be done automatically without JavaScript. The rest of the website does not use JavaScript.</p>
             </div>
@@ -54,10 +54,10 @@
             if (locale != "hu_HU") {
                 document.getElementById("redirect-hu").style.display = "none";
                 document.getElementById("redirect-en").style.display = "block";
-                window.location.assign('/en/index.html');
+                window.location.assign('/en');
                 console.log('Entered if block');
             }
-            else window.location.assign('/hu/index.html');
+            else window.location.assign('/hu');
         </script>
     </body>
 </html>

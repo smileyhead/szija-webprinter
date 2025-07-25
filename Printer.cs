@@ -43,13 +43,13 @@ namespace Szija_Website_Printer
 
             header += $"\" />\r\n\t<meta property=\"og:locale\" content=\"{LocaleLongSnake}\" />\r\n\t<meta property=\"og:site_name\" content=\"{siteName}\" />\r\n\t<meta property=\"og:url\" content=\"";
 
-            if (pageIndex == 0) header += $"{domain}/{Locale}/{indexDocName}.html";
-            else header += $"{domain}/{Locale}/{linksDocName}.html";
+            if (pageIndex == 0) header += $"{domain}/{Locale}";
+            else header += $"{domain}/{Locale}/{linksDocName}";
 
             header += $"\" />\r\n</head>\r\n\r\n<body>\r\n\t<div id=\"wrapper\">\r\n\t\t<header>\r\n\t\t\t<h1>{Strings.header_text.name.text.Get(Locale)}</h1>\r\n\t\t\t<p id=\"bio\">{Strings.header_text.bio.text.Get(Locale)}</p>\r\n\t\t\t\r\n\t\t\t<nav>\r\n\t\t\t\t";
 
-            if (pageIndex == 0) header += $"<p id=\"nav\"><span class=\"nav-active hor-list\">▶ <b>{Strings.header_text.project_listing.text.Get(Locale)}</b></span> <span class=\"hor-list\">▶ <a href=\"links.html\"><b>{Strings.header_text.links.text.Get(Locale)}</b></a></span><span class=\"langselect\">▶ <a href=\"../{OtherLocale}/index.html\"><b>{Strings.header_text.other_lang.text.Get(Locale)}</b></a></span>";
-            else header += $"<p id=\"nav\"><span class=\"hor-list\">▶ <a href=\"index.html\"><b>{Strings.header_text.project_listing.text.Get(Locale)}</b></a></span> <span class=\"nav-active hor-list\">▶ <b>{Strings.header_text.links.text.Get(Locale)}</b></span><span class=\"langselect\">▶ <a href=\"../{OtherLocale}/links.html\"><b>{Strings.header_text.other_lang.text.Get(Locale)}</b></a></span>";
+            if (pageIndex == 0) header += $"<p id=\"nav\"><span class=\"nav-active hor-list\">▶ <b>{Strings.header_text.project_listing.text.Get(Locale)}</b></span> <span class=\"hor-list\">▶ <a href=\"links\"><b>{Strings.header_text.links.text.Get(Locale)}</b></a></span><span class=\"langselect\">▶ <a href=\"../{OtherLocale}/\"><b>{Strings.header_text.other_lang.text.Get(Locale)}</b></a></span>";
+            else header += $"<p id=\"nav\"><span class=\"hor-list\">▶ <a href=\"/{Locale}/\"><b>{Strings.header_text.project_listing.text.Get(Locale)}</b></a></span> <span class=\"nav-active hor-list\">▶ <b>{Strings.header_text.links.text.Get(Locale)}</b></span><span class=\"langselect\">▶ <a href=\"../{OtherLocale}/links\"><b>{Strings.header_text.other_lang.text.Get(Locale)}</b></a></span>";
 
             header += $"</p>\r\n\t\t\t<nav>\r\n\t\t</header>\r\n\t\t\r\n\t\t";
 
@@ -82,7 +82,11 @@ namespace Szija_Website_Printer
                 if (Strings.project_entries[i].end_date == null) main += "–";
                 else if (Strings.project_entries[i].end_date != "") main += $"–<time datetime=\\\"{Strings.project_entries[i].end_date}\\\">{DateFormatter.Format(Strings.project_entries[i].end_date, Locale)}</time>";
 
-                main += $"</aside><span class=\\\"proj-title\\\">{Strings.project_entries[i].name.text.Get(Locale)}</span> <span class=\\\"proj-id\\\">SZLP-{(Strings.project_entries[i].id + 100).ToString("0000")}</span>\\r\\n\\t\\t\\t\\t\\t</div>\\r\\n\\t\\t\\t\\t\\t<div class=\\\"proj-body\\\">\\r\\n\\t\\t\\t\\t\\t\\t<aside><a href=\\\"../{Strings.project_entries[i].image}.png\\\" target=\\\"_blank\\\"><img class=\\\"proj-img\\\" src=\\\"../{Strings.project_entries[i].image}-small.jpg\\\" alt=\\\"\\\"></a></aside>\\r\\n\\t\\t\\t\\t\\t\\t<p class=\\\"body-text\\\">{Strings.project_entries[i].body_text.text.Get(Locale)}</p>";
+                main += $"</aside><span class=\\\"proj-title\\\">{Strings.project_entries[i].name.text.Get(Locale)}</span> <span class=\\\"proj-id\\\">SZLP-{(Strings.project_entries[i].id + 100).ToString("0000")}</span>\\r\\n\\t\\t\\t\\t\\t</div>\\r\\n\\t\\t\\t\\t\\t<div class=\\\"proj-body\\\">\\r\\n\\t\\t\\t\\t\\t\\t";
+
+                if (Strings.project_entries[i].image != null) main += $"<aside><a href=\\\"../{Strings.project_entries[i].image}.png\\\" target=\\\"_blank\\\"><img class=\\\"proj-img\\\" src=\\\"../{Strings.project_entries[i].image}-small.jpg\\\" alt=\\\"\\\"></a></aside>";
+
+                main += $"\\r\\n\\t\\t\\t\\t\\t\\t<p class=\\\"body-text\\\">{Strings.project_entries[i].body_text.text.Get(Locale)}</p>";
 
                 for (int j = 0; j < Strings.project_entries[i].buttons.Count; j++)
                 {
