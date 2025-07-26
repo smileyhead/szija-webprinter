@@ -120,7 +120,11 @@ namespace Szija_Website_Printer
 
             for (int i = 0; i < Strings.links_no_8831.Count; i++)
             {
-                main += $"<p class=\"no8831\"><a href=\"{Strings.links_no_8831[i].url}\" target=\"_blank\">{Strings.links_no_8831[i].text.Get(Locale)}</a></p>\r\n\t\t\t";
+                main += $"<p class=\"no8831\"><a href=\"{Strings.links_no_8831[i].url}\" target=\"_blank\">{Strings.links_no_8831[i].link_text.text.Get(Locale)}</a>";
+
+                if (Strings.links_no_8831[i].link_text.text.en != null) main += $" – {Strings.links_no_8831[i].note.text.Get(Locale)}";
+
+                main += "</p>\r\n\t\t\t";
             }
 
             main += $"\r\n\t\t\t<!-- Own -->\r\n\t\t\t<h2>{Strings.links_text.title3.text.Get(Locale)}</h2>\r\n\t\t\t<aside><img class=\"yes8831\" src=\"../images/links/own/ico_szija.gif\" alt=\"{Strings.links_text.button_alt_text.text.Get(Locale)}\"></aside>\r\n\t\t\t<p>{Strings.links_text.text3.text.Get(Locale)}</p>\r\n\t\t\t\r\n\t\t\t<!-- Internetometer -->\r\n\t\t\t<h2>{Strings.links_text.title4.text.Get(Locale)}</h2>\r\n\t\t\t<a href='http://internetometer.com/give/45353'><img src='http://internetometer.com/image/45353.png'/></a>\r\n\t\t</main>\r\n\t\t\r\n\t\t";

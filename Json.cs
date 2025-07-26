@@ -23,7 +23,8 @@ public class Links8831
 
 public class LinksNo8831
 {
-    public Text text { get; set; }
+    public LinkText link_text { get; set; }
+    public Note note { get; set; }
     public string url { get; set; }
 }
 
@@ -112,6 +113,10 @@ public class JustText
 {
     public Text text { get; set; }
 }
+
+public class LinkText : JustText { }
+
+public class Note : JustText { }
 
 public class ProjectsListingDescription : JustText { }
 

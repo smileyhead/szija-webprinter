@@ -849,8 +849,8 @@
     {
       "alt_text": {
         "text": {
-          "en": "GBAtemp.net – Button by CeeDee",
-          "hu": "GBAtemp.net – A gomb alkotója: CeeDee"
+          "en": "GBAtemp.net – independent gaming forum (button by CeeDee)",
+          "hu": "GBAtemp.net – független játékos fórum (a gomb alkotója: CeeDee)"
         }
       },
       "img_url": "gbatemp.png",
@@ -859,8 +859,8 @@
     {
       "alt_text": {
         "text": {
-          "en": "Home Assistant",
-          "hu": null
+          "en": "Home Assistant – open smart home system",
+          "hu": "Home Assistant – nyílt okosotthon-rendszer"
         }
       },
       "img_url": "ha.png",
@@ -869,8 +869,8 @@
     {
       "alt_text": {
         "text": {
-          "en": "Web Japan archives",
-          "hu": "Web Japan-archívum"
+          "en": "Web Japan archives – Japanase culture and inspiration for this site's design",
+          "hu": "Web Japan-archívum – japán kultúra és inspiráció a honlapom látványvilágára"
         }
       },
       "img_url": "ico_webjapan05.jpg",
@@ -879,18 +879,64 @@
   ],
   "links_no_8831": [
     {
-      "text": {
-        "en": "Charlotte Russe",
-        "hu": null
+      "link_text": {
+        "text": {
+          "en": "Charlotte Russe",
+          "hu": null
+        }
+      },
+      "note": {
+        "text": {
+          "en": "art commissions",
+          "hu": "rajzrendelés"
+        }
       },
       "url": "https://chrusse.carrd.co/"
     },
     {
-      "text": {
-        "en": "Andrew Hedges",
-        "hu": null
+      "link_text": {
+        "text": {
+          "en": "Andrew Hedges",
+          "hu": null
+        }
+      },
+      "note": {
+        "text": {
+          "en": "useful HTML tools and experiments",
+          "hu": "hasznos HTML-eszközök és kísérletek"
+        }
       },
       "url": "https://andrew.hedges.name/"
+    },
+    {
+      "link_text": {
+        "text": {
+          "en": "Indie Wiki Buddy",
+          "hu": null
+        }
+      },
+      "note": {
+        "text": {
+          "en": "helper extension for finding quality independent wikis",
+          "hu": "minőségi független wikik megtalálását elősegítő bővítmény"
+        }
+      },
+      "url": "https://getindie.wiki/"
+    },
+    {
+      "link_text": {
+        "text": {
+          "en": "Journey Buster",
+          "hu": null
+        }
+      },
+      "note": {
+        "text": {
+          "en": "helper extension for warning against AI ‘artists’ on Twitter (subsequently X)",
+          "hu": "a Twitteres (későbben X) MI „művészek” ellen figyelmeztető bővítmény"
+        }
+      },
+      "url": "https://journeybuster.com/"
     }
   ],
   "footer_gag": {
