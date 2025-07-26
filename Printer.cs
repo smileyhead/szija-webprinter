@@ -48,8 +48,8 @@ namespace Szija_Website_Printer
 
             header += $"\" />\r\n</head>\r\n\r\n<body>\r\n\t<div id=\"wrapper\">\r\n\t\t<header>\r\n\t\t\t<h1>{Strings.header_text.name.text.Get(Locale)}</h1>\r\n\t\t\t<p id=\"bio\">{Strings.header_text.bio.text.Get(Locale)}</p>\r\n\t\t\t\r\n\t\t\t<nav>\r\n\t\t\t\t";
 
-            if (pageIndex == 0) header += $"<p id=\"nav\"><span class=\"nav-active hor-list\">▶ <b>{Strings.header_text.project_listing.text.Get(Locale)}</b></span> <span class=\"hor-list\">▶ <a href=\"links\"><b>{Strings.header_text.links.text.Get(Locale)}</b></a></span><span class=\"langselect\">▶ <a href=\"../{OtherLocale}/\"><b>{Strings.header_text.other_lang.text.Get(Locale)}</b></a></span>";
-            else header += $"<p id=\"nav\"><span class=\"hor-list\">▶ <a href=\"/{Locale}/\"><b>{Strings.header_text.project_listing.text.Get(Locale)}</b></a></span> <span class=\"nav-active hor-list\">▶ <b>{Strings.header_text.links.text.Get(Locale)}</b></span><span class=\"langselect\">▶ <a href=\"../{OtherLocale}/links\"><b>{Strings.header_text.other_lang.text.Get(Locale)}</b></a></span>";
+            if (pageIndex == 0) header += $"<p id=\"nav\"><span class=\"nav-active hor-list\">▶ <b>{Strings.header_text.project_listing.text.Get(Locale)}</b></span> <span class=\"hor-list\">▶ <a href=\"links\"><b>{Strings.header_text.links.text.Get(Locale)}</b></a></span><span class=\"langselect\" lang=\"{OtherLocale}\">▶ <a href=\"../{OtherLocale}/\"><b>{Strings.header_text.other_lang.text.Get(Locale)}</b></a></span>";
+            else header += $"<p id=\"nav\"><span class=\"hor-list\">▶ <a href=\"/{Locale}/\"><b>{Strings.header_text.project_listing.text.Get(Locale)}</b></a></span> <span class=\"nav-active hor-list\">▶ <b>{Strings.header_text.links.text.Get(Locale)}</b></span><span class=\"langselect\" lang=\"{OtherLocale}\">▶ <a href=\"../{OtherLocale}/links\"><b>{Strings.header_text.other_lang.text.Get(Locale)}</b></a></span>";
 
             header += $"</p>\r\n\t\t\t<nav>\r\n\t\t</header>\r\n\t\t\r\n\t\t";
 
