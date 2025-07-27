@@ -51,11 +51,10 @@
             document.getElementById("redirect-js").style.display = "block";
 
             const locale = navigator.language; console.log(locale);
-            if (locale != "hu_HU") {
+            if (!locale.includes("hu")) { //This should cover both "hu" and "hu_HU" without any overreach
                 document.getElementById("redirect-hu").style.display = "none";
                 document.getElementById("redirect-en").style.display = "block";
                 window.location.assign('/en');
-                console.log('Entered if block');
             }
             else window.location.assign('/hu');
         </script>
