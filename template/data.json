@@ -117,11 +117,47 @@
     {
       "name": {
         "text": {
-          "en": "Szija Webprinter",
+          "en": "discord-css-short-buttons",
           "hu": null
         }
       },
       "id": 16,
+      "type": "mod",
+      "start_date": "2025-07",
+      "end_date": "",
+      "image": "images/dcsb",
+      "alt_text": {
+        "text": {
+          "en": "",
+          "hu": ""
+        }
+      },
+      "body_text": {
+        "text": {
+          "en": "A simple CSS tweak for Discord to shorten the oversized buttons at the top of the DMs page.",
+          "hu": "Egy egyszerű CSS-alapú módosítás a Discordhoz, amely csökkenti a Közvetlen üzenetek oldal tetején található túlméretezett gombok magasságát."
+        }
+      },
+      "buttons": [
+        {
+          "label": {
+            "text": {
+              "en": "GitHub repo",
+              "hu": "GitHub-adattár"
+            }
+          },
+          "emphasis": true,
+          "url": "https://github.com/smileyhead/discord-css-short-buttons"
+        }
+      ]
+    },{
+      "name": {
+        "text": {
+          "en": "Szija Webprinter",
+          "hu": null
+        }
+      },
+      "id": 17,
       "type": "cod",
       "start_date": "2025-07",
       "end_date": null,
